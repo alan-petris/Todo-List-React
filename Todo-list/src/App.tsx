@@ -1,11 +1,14 @@
 import "./App.css";
 import Header from "./components/Header.tsx";
+import Lista from "./components/Lista.tsx";
 
 function App() {
     return (
         <>
-            <h1>Hello World</h1>
-            <Header />
+            <div className="w-100 m-auto border-amber-600 border-2">
+                <Header />
+                <Lista />
+            </div>
         </>
     );
 }
