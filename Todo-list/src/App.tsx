@@ -6,7 +6,6 @@ function App() {
     return (
         <>
             <div className="w-100 m-auto border-amber-600 border-2">
-                <Header />
                 <Lista />
             </div>
         </>
