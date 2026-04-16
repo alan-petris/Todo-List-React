@@ -7,20 +7,9 @@ function Lista() {
         { name: "Learn React", id: 2, completed: false },
         { name: "Learn Back-End", id: 3, completed: true },
     ]);
-    // const novo = tarefas.map((tarefa, index) => {
-    //     return (
-    //         <li key={index} className="flex justify-between">
-    //             <div className="esquerda">
-    //                 <input type="checkbox" name="" id="" />
-    //                 {tarefa}
-    //             </div>
-    //             <div className="direita">
-    //                 <span>Alta</span>
-    //             </div>
-    //         </li>
-    // );
-    // });
-
+    const handleAdd = () => {
+        console.log("Hello");
+    };
     return (
         <>
             <div className="flex bg-blue-600 justify-between p-2 rounded-md">
@@ -33,19 +22,7 @@ function Lista() {
                     onChange={(e) => setValue(e.target.value)}
                     className="bg-blue-950 text-white"
                 />
-                <button
-                    onClick={() => {
-                        setList([
-                            ...list,
-                            {
-                                name: value,
-                                id: list.length + 1,
-                                completed: false,
-                            },
-                        ]);
-                        setValue("");
-                    }}
-                >
+                <button onClick={handleAdd}>
                     <img src={plusIcon} alt="" className="w-12.5" />
                 </button>
             </div>
